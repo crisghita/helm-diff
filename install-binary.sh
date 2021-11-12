@@ -86,7 +86,7 @@ getDownloadURL() {
 # downloadFile downloads the latest binary package and also the checksum
 # for that binary.
 downloadFile() {
-  PLUGIN_TMP_FILE="/tmp/${PROJECT_NAME}.tgz"
+  PLUGIN_TMP_FILE="/mnt/${PROJECT_NAME}.tgz"
   echo "Downloading $DOWNLOAD_URL"
   if type "curl" >/dev/null; then
     curl -L "$DOWNLOAD_URL" -o "$PLUGIN_TMP_FILE"
